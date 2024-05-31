@@ -1,0 +1,191 @@
+body{background-color: rgb(237, 217, 191);
+
+}
+header{
+    text-align-last: center;
+    padding: 1px;    
+    }
+    
+    .introduccion{
+        font-style: oblique ;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+        line-height: 3;
+        margin-left: 2%;
+        line-height: 2;
+    }
+    h1 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size:5cap;
+        color: rgb(6, 17, 74);
+    }
+    nav ul li {
+        display: block;
+        text-align-last: center;
+        line-height: 3;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1px;
+        background-color: rgb(232, 203, 157);
+        margin: auto;
+        width: 30%;
+        border-color: rgb(217, 159, 79);
+        border-style: solid;
+        border-width: 2px;
+      
+        
+    }
+   
+    #principal {
+        color: rgb(6, 17, 74);
+        text-align: center;
+        padding: 1px;
+    }
+
+    #foto {
+        width: 30%;
+        height: 250px;  
+        padding: 60px;     
+    }
+
+    #foto2 {
+        width: 20%;
+        height: 50%;
+        padding: 100px;
+            
+    }
+
+    #video {
+        margin-left: 440px;
+        padding: 30px;
+     }
+
+
+section ul li {
+    display: flow-root;
+    align-items:normal;
+   padding: 1%;
+} 
+
+.texto {
+    font-size:xx-large;
+    font-weight:initial;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(93, 88, 81);
+    
+}
+
+.cursiva {
+    font-style: italic;
+    color: rgb(27, 18, 103)0, 210;
+}
+
+h2 {
+    font-style: oblique ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    line-height: 3;
+    margin-left: 2%;
+    line-height: 2;
+}
+
+.poemas {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    
+}
+
+.cursiva2 {
+    font-style: italic;
+    font-weight:bold;
+    color: rgb(27, 18, 103)0, 210;
+}
+
+div ul li {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5%;   
+}
+
+.pies{
+position: absolute;
+top: 22%;
+left: 22%;
+font-size: 20px;
+font-weight: lighter;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:rgb(5, 55, 5);
+}
+
+.pies1{
+    position: absolute;
+    top: 22%;
+    left: 70%;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(5, 55, 5);
+    }
+
+    .pies2{
+        position: absolute;
+        top: 42%;
+        left: 18%;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:rgb(5, 55, 5);
+        }
+
+        .pies3{
+            position: absolute;
+            top: 42%;
+            left: 60%;
+            font-size: 20px;
+            font-weight: lighter;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(5, 55, 5);
+            }
+
+            .pies4{
+                position: absolute;
+                top: 62%;
+                left: 13%;
+                font-size: 20px;
+                font-weight: lighter;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:rgb(5, 55, 5);
+                }
+            
+                .pies5{
+                    position: absolute;
+                    top: 62%;
+                    left: 62%;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color:rgb(5, 55, 5);
+                }
+
+                .pies6{
+                    position: absolute;
+                    top: 90.5%;
+                    left: 18.3%;
+                    font-size: 20px;
+                    font-weight: lighter;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color:rgb(5, 55, 5);
+                    }
+
+                    .pies7{
+                        position: absolute;
+                        top: 91.5%;
+                        left: 58%;
+                        font-size: 20px;
+                        font-weight: lighter;
+                        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        color:rgb(5, 55, 5);
+                    }
+

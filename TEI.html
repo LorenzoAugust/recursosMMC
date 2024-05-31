@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textos digitales</title>
+
+  <link rel="stylesheet" href="main.css" />
+  <script src="librerias/CETEI.js"></script>
+</head>
+<body>
+  <div class="general">
+    <div id="contenedor-tei"></div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (typeof CETEI === 'undefined') {
+          console.error('CETEI.js no se cargó correctamente');
+          return;
+        }
+
+        let CETEIcean = new CETEI();
+
+        let behaviors = {
+          "tei": {
+            "head": function(e) {
+              let level = document.evaluate("count(ancestor::tei-div)", e, null, XPathResult.NUMBER_TYPE, null);
+              let result = document.createElement("h" + (level.numberValue + 1)); // Asegúrate de que el nivel sea correcto
+              for (let n of Array.from(e.childNodes)) {
+                result.appendChild(n.cloneNode(true));
+              }
+              return result;
+            },
+            "lb": ["<br>"],
+            "remarks": function(e) {
+              const content = e.textContent;
+              let result = document.createElement("span");
+              result.setAttribute("class", "tooltip");
+              result.textContent = content;
+              return result;
+            }
+          }
+        };
+
+        CETEIcean.addBehaviors(behaviors);
+
+        CETEIcean.getHTML5("Telegrama.xml", function(data) {
+          if (data) {
+            document.getElementById("contenedor-tei").appendChild(data);
+          } else {
+            console.error('No se pudo cargar el archivo Telegrama.xml');
+          }
+        });
+      });
+    </script>
+  </div>
+  <footer>
+    <a href="index.html">Volver al inicio</a>
+</footer>
+</body>
+</html>
